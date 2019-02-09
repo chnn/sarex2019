@@ -254,18 +254,61 @@ header {
 header p {
   color: var(--gray-5);
   font-style: italic;
-  /* font-weight: bold; */
 }
 
 section.splash {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-section.splash img {
-  margin-right: 60px;
+.slideshow {
+  padding: 0;
+  margin: 0;
+  flex: 1 1 0;
+  margin-right: 20px;
+  position: relative;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.slideshow li {
+  list-style: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fade-out 1s;
+}
+
+.slideshow li.active {
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+  animation: fade-in 1s;
 }
 
 .blurb {
-  margin-top: 25px;
+  flex: 1 1 0;
+  margin-left: 20px;
 }
 
 .blurb .break {
@@ -304,6 +347,11 @@ footer {
 }
 
 footer .sheriff-badge {
+  margin-left: 15px;
+}
+
+footer .oes-badge {
+  height: 90px;
   margin-left: 15px;
 }
 
