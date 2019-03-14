@@ -23,6 +23,7 @@
   --gray-4: #7f8c8d;
   --gray-5: #34495e;
   --gray-7: #2c3e50;
+  --gray-8: #1b242d;
   --gray-9: #000000;
 
   --red-1: #ffdfdf;
@@ -249,15 +250,42 @@ input[type='submit']:hover {
   background: var(--green-6);
 }
 
+.logo a {
+  color: var(--gray-8);
+}
+
+.logo a:before {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--green-8);
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  bottom: 0;
+  left: 20%;
+  background-color: var(--green-8);
+  transform: scaleX(0);
+  transition: all 0.1s ease-in-out 0s;
+}
+
+a:hover:before {
+  transform: scaleX(1);
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-header p {
-  color: var(--gray-5);
-  font-style: italic;
 }
 
 section.splash {
@@ -364,4 +392,9 @@ footer p {
   /* font-style: italic; */
   color: var(--gray-6);
   margin-left: 60px;
+}
+
+section.rfp-page {
+  display: flex;
+  justify-content: center;
 }
