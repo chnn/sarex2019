@@ -10,7 +10,7 @@
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 
   --blue-1: #f6fffe;
-  --blue-2: #cdecff;
+  --blue-2: #d9eaf3;
   --blue-4: #96ccff;
   --blue-6: #357edd;
   --blue-7: #00449e;
@@ -266,6 +266,10 @@ a {
   padding-bottom: 8px;
 }
 
+a:hover {
+  color: var(--green-6);
+}
+
 a:before {
   content: "";
   position: absolute;
@@ -278,7 +282,11 @@ a:before {
   transition: all 0.1s ease-in-out 0s;
 }
 
-a:hover:before {
+nav a:hover {
+  color: var(--green-8);
+}
+
+nav a:hover:before {
   transform: scaleX(1);
 }
 
@@ -286,6 +294,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.alert {
+  background: var(--blue-2);
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--blue-4);
+  text-align: center;
+  margin-bottom: 25px;
+
+  span {
+    font-weight: bold;
+    color: var(--blue-9);
+    margin-right: 5px;
+    font-variant: all-small-caps;
+  }
 }
 
 section.splash {
