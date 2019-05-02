@@ -179,16 +179,37 @@ a:hover {
 header {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-header .logo {
-  margin: 50px 0 20px 0;
+  justify-content: space-between;
+  margin: 40px 0;
 }
 
 header .logo a {
   display: block;
   color: var(--gray-8);
+}
+
+header .logo {
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav a {
+  display: block;
+  margin: 10px 0 10px 30px;
+  padding-bottom: 4px;
+}
+
+header nav a.active {
+  border-bottom: 4px solid var(--green-8);
+}
+
+header nav a:hover {
+  border-bottom: 4px solid var(--green-6);
 }
 
 footer {
@@ -375,4 +396,9 @@ footer p {
 .rfp-page {
   display: flex;
   justify-content: center;
+}
+
+.location-page img {
+  max-width: 100%;
+  margin: 0 auto 20px auto;
 }
