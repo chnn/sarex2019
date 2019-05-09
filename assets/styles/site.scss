@@ -45,8 +45,7 @@
 
 body {
   font-family: var(--font-body);
-  font-size: 18px;
-  color: var(--blue-9);
+  font-size: 18px; color: var(--blue-9);
   background-image: url('/assets/images/topo.png');
   background-repeat: both;
   background-size: 400px;
@@ -160,21 +159,9 @@ a:hover {
   color: var(--green-6);
 }
 
-// a:before {
-//   content: '';
-//   position: absolute;
-//   width: 60%;
-//   height: 3px;
-//   bottom: 0;
-//   left: 20%;
-//   background-color: var(--green-8);
-//   transform: scaleX(0);
-//   transition: all 0.1s ease-in-out 0s;
-// }
-
-// a:hover:before {
-//   transform: scaleX(1);
-// }
+p {
+  line-height: 140%;
+}
 
 header {
   display: flex;
@@ -254,6 +241,10 @@ footer p {
 
 .home .alert {
   margin: 0 0 50px 0;
+}
+
+.home .well {
+  padding: 30px;
 }
 
 .home .splash {
@@ -367,7 +358,7 @@ footer p {
 }
 
 .home .keynote img {
-  height: 450px;
+  height: 350px;
 }
 
 .home .tracks ul {
@@ -401,4 +392,15 @@ footer p {
 .location-page img {
   max-width: 100%;
   margin: 0 auto 20px auto;
+}
+
+.well {
+  background: #f9f8f8;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #c1c1c1;
+}
+
+.page.well {
+  padding-top: 15px;
 }
