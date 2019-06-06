@@ -171,30 +171,21 @@ hr {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 40px 0;
+  justify-content: center;
+  margin: 30px 0;
 }
 
-header .logo a {
-  display: block;
-  color: var(--gray-8);
-}
 
-header .logo {
-  margin: 0;
-  padding: 0;
+header .logo img {
+  width: 150px;
 }
 
 header nav {
   display: flex;
-  justify-content: flex-end;
+  margin-left: 25px;
 }
 
 @media (max-width: 800px) {
-  header {
-    justify-content: space-around;
-  }
-
   header nav {
     flex-direction: column;
     justify-content: center;
@@ -259,7 +250,7 @@ footer p {
 }
 
 .home .alert {
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
 }
 
 .home .well {
