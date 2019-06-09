@@ -134,43 +134,41 @@ layout: default
         {% for track in site.data.tracks %}
         <div class="track">
           <div class="track-header">
-            <div class="track-title">{{ track.title }}</div>
+            <div class="track-title">{{ track.Name }}</div>
 	    <div class="track-affiliate">
-	      <div class="track-affiliate-name">{{ track.leader.name }}</div>
-	      {% if track.leader.affiliation.size > 0 %}
-	      <div class="track-affiliate-affiliation">{{ track.leader.affiliation }}</div>
+	      <div class="track-affiliate-name">{{ track.Leader.Name }}</div>
+	      {% if track.Leader.Affiliation.size > 0 %}
+	      <div class="track-affiliate-affiliation">{{ track.Leader.Affiliation }}</div>
 	      {% endif %}
 	    </div>
           </div>
-          {% if track.classes.size > 0 %}
+          {% if track.Courses.size > 0 %}
           <div class="track-courses">
-            {% for class in track.classes %}
+            {% for course in track.Courses %}
             <div class="track-course">
 	      <div class="track-course-header">
 		<div class="track-course-title">
-		  {{ class.title }}
+		  {{ course.Title }}
 		</div>
-                {% if class.instructors.size > 0 %}
+                {% if course.Instructors.size > 0 %}
                 <div class="track-course-instructors">
-		  {% for instructor in class.instructors %}
+		  {% for instructor in course.Instructors %}
 		  <div class="track-affiliate">
-		    <div class="track-affiliate-name">{{ instructor.name }}</div>
-		    {% if instructor.affiliation.size > 0 %}
-		    <div class="track-affiliate-affiliation">{{ instructor.affiliation }}</div>
+		    <div class="track-affiliate-name">{{ instructor.Name }}</div>
+		    {% if instructor.Affiliation.size > 0 %}
+		    <div class="track-affiliate-affiliation">{{ instructor.Affiliation }}</div>
 		    {% endif %}
 		  </div>
 		  {% endfor %}
                 </div>
                 {% endif %}
 	      </div>
-              {% if class.description.size > 0 %}
-              {% if class.description.size > 0 %}
+              {% if course.Description.size > 0 %}
               <div class="track-course-details-toggle">
                 Description &raquo;
               </div>
-              {% endif %}
               <div class="track-course-details">
-                {{ class.description | markdownify }}
+                {{ course.Description | markdownify }}
               </div>
               {% endif %}
             </div>
