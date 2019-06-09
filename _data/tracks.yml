@@ -1,0 +1,307 @@
+- title: Air Ops
+  leader:
+    name: Travis Wiley
+    affiliation: Napa SAR
+  classes:
+    - title: Helo Awareness and K-9
+      description: 
+      instructors: 
+    - title: Hoist Operation
+      description:
+      instructors:
+- title: Drone Ops
+  leader:
+    name: Paul Huish
+    affiliation: Marin SAR
+- title: Tech Rope Rescue
+  leader:
+    name: John Chang
+    affiliation: BAMRU
+  classes:
+    - title: Knots & Rope Systems Review
+      description: Fri eve knots & rope systems review. This preliminary session will provide provide opportunity to review compoenent methods and techniques that will be utilized in the Saturday and Sunday sessions. 
+      instructors: 
+        - name: John Chang
+          affiliation: BAMRU
+        - name: Rick Wonneberger
+          affiliation: Marin SAR
+    - title: "High Angle Technical Systems: Comparative analysis"
+      description: "Sat am class 0800-1200 High angle technical systems comparative analysis and inter-operative considerations. Multiple systems set up in relative close proximity of each other. Location: in the barn or immediately outside with overhead trees as high directionals. The venue will facilitate participants from different home organizations to built and demonstrating the rigging method from their home team. The systems will then be exercised by other participants to have hands on experience learning and operating those systems."
+      instructors: 
+        - name: John Chang
+          affiliation: BAMRU
+        - name: Rick Wonneberger
+          affiliation: Marin SAR
+    - title: High Angle Rigging for K9 & Attendant
+      description: Sat pm class 1300-1700 High angle rigging for K9/attendant rescue load handling and management. Location is same as morning session. The systems that will be utilized will be those built earlier in the day. K9 teams will be working with the rigging teams in exercsising the assembly and operating with K9/attendant loads. 
+      instructors:
+        - name: John Chang
+          affiliation: BAMRU
+        - name: Rick Wonneberger
+          affiliation: Marin SAR
+        - name: Wayne Behrens
+          affiliation: BAMRU/CARDA/YODOGS/San Mateo SO
+    - title: "Guideline Systems: Construction & Operation"
+      description: Sun am class 0800-1200 Guideline system construction and operation. Location at reservoir at lookout point. Emphasis will be on anchors, load considerations, and hands on operations. 
+      instructors:
+        - name: John Chang
+          affiliation: BAMRU
+        - name: Rick Wonneberger
+          affiliation: Marin SAR
+- title: USAR
+  leader:
+    name: Randy Engler
+    affiliation: Battalion Chief MCFD
+  classes:
+    - title: USAR
+      description: "The SAREX US&R track is a Pre-conference class offered Friday from 9-4 hosted by Marin County US&R Team in Pt. Reyes Station. We will cover the basics of working in damaged structures, search and the California US&R system, and how SAR would fold into a large disaster response.\n\nThis course will focus on three different evolutions utilized by Heavy Rescue Companies and US&R Task Forces during operations in the urban environment. Participants will learn skills needed to mark buildings, utilize cameras and listening devices during search operations, lift and move heavy objects and construct raker shoring to stabilize buildings prior to entry."
+      instructors: 
+        - name: Randy Engler
+          affiliation: Battalion Chief MCFD
+- title: ATV/UTV
+  leader:
+    name: Kurt Stocks
+    affiliation: El Dorado SAR
+  classes:
+    - title: 4x4 Ops Self-Rescue Techniques
+      description: "This course will focus on training participants to recover SAR vehicles that have become stuck or disabled to allow them to return to command or to continue searching.  We will include a group discussion followed by practical, hands-on demonstrations covering OHV recovery methodology such as winching techniques, how to use high-lift jacks, tire repair, digging, mat tracks, and static vs dynamic towing.\n\nClass participants will take part in group hands-on training and execute recovery methods on their own vehicles."
+      instructors:
+        - name: Kurt Stocks
+          affiliation: El Dorado SAR
+        - name: James Mecham
+          affiliation: El Dorado SAR
+        - name: Peter Hansen
+          affiliation: Sgt. Santa Cruz Sheriff Dept/SAR Coordinator
+    - title: Intermediate ATV/UTV/4x4
+      description: "This will be a hands-on class and trail run demonstrating how to get the most from your vehicle. It will cover topics such as negotiating intermediate and advanced terrain in mud and steep or rocky environments. We will discuss trail obstacles, off-camber scenarios, and breakover angles. We will also discuss and demonstrate airing down and how and why to use lockers.\n\nThe class will include a discussion component, a demonstration component, and opportunities for some class members to try various techniques with their vehicles."
+      instructors:
+        - name: Kurt Stocks
+          affiliation: El Dorado SAR
+        - name: James Mecham
+          affiliation: El Dorado SAR
+        - name: Peter Hansen
+          affiliation: Sgt. Santa Cruz Sheriff Dept/SAR Coordinator
+    - title: ATV/UTV advanced recovery technique
+      description: This will be a demonstration of advanced recovery techniques including advanced winching techniques with multiple rigs and angles.
+      instructors:
+        - name: Kurt Stocks
+          affiliation: El Dorado SAR
+        - name: James Mecham
+          affiliation: El Dorado SAR
+        - name: Peter Hansen
+          affiliation: Sgt. Santa Cruz Sheriff Dept/SAR Coordinator
+- title: K9
+  leader:
+    name: Shay Cook
+    affiliation: Marin SAR
+  classes:
+    - title: Intro to K9 Wilderness Responder (certificated course)
+      description: "As a SAR K9 Handler, you have a lot of responsibilities and not a lot of resources.  The Intro to K9 Wilderness Responder is a 4 hr short-course on the essentials you need to ensure that you have the skills to read your K9's health behaviors as well as you can your read their scent behaviors, and to respond to emergencies that occur when help and helicopter is likely very far away.\n\nInteractive, fast-paced course with hands-on practice, with topics including basic BLS such as what to do if your dog chokes on his ball reward (tip use ball-rope toys instead); heat/hydration/hypothermia including how to get high-drive dogs to drink enough on the trail; Bloat/GDV including important prevention strategies; toxins such as xylitol (X Marks the spot), environmental risks such as snake bites; trauma such as large animal encounters; and remote considerations such packaging and transporting your K9."
+      instructors:
+        - name: Jo-Ann Brenner
+          affiliation: K9 Medic
+    - title: Trailing Field 
+      description:
+      instructors:
+        - name: Ellen Kruger
+          affiliation: Marin SAR/CARDA
+        - name: Greg Slavit
+          affiliation: CARDA/YODOGS/SARDUS
+    - title: Area Field 
+      description:
+      instructors:
+        - name: Kevin Lundquist
+          affiliation: Marin SAR/CARDA/YODOGS
+        - name: Sonya Roth
+          affiliation: Marin SAR/CARDA/WOOF/ALCO SAR
+    - title: C1 Field
+      description:
+      instructors:
+        - name: Marion Matthews
+          affiliation: Marin SAR/CARDA
+        - name: Alyson Hart
+          affiliation: ALCO SAR/CARDA
+    - title: Canine Missions in Extreme Weather Environments
+      description: "From Mount Whitney to Death Valley, and from freezing winters to searing summers, California can present an extreme range of environments for any search and rescue mission. Canine handlers especially need to be aware of the challenges that these conditions can place upon their search dogs. This presentation will present some of the strategies that will assist search dog teams to be able to function in these difficult situations."
+      instructors:
+        - name: Dr. Ben Ho
+          affiliation: CAL-OES
+    - title: K9 Disaster Deployment
+      description: "This class will cover K9 Human Remain Detection in a Disaster environment from the perspective of both a K9 handler and Incident Command.  The course will discuss the expectations a handler should have when being deployed to a disaster environment as well as the expectations overhead will have for those responding teams."
+      instructors:
+        - name: Deputy Tracee Walker
+          affiliation: Santa Barbara SO/CARDA
+    - title: K9 Drive - Drive and the Working Dog
+      description: "This power point presentation and discussion is geared for teams from any working discipline to provide some insights into the how and why your canine does what he does; the way he does. Drive is the fuel, it's the magic dust that makes your canine's engine run. Please join us as we explore the many aspects of drive from what it is, how it works and how we can tap into this vital resource for better training and therefore better deployments. Got Drive? I hope so because without it you're only working half a dog!"
+      instructors:
+        - name: Jack Fields
+          affiliation: CARDA/K9 Development
+    - title: Dog on Dog Interaction Awareness
+      description: "Is your dog hidden away in the truck because you are worried it might react negativity to another dog? concerned about your dog-on-dog sign-off? Is the potential of a unfamiliar dog working a overlapping search  assignment cause for alarm? Whether you are currently having dog-on-dog issues or if you want to prevent dog –on –dog issues in the future, this might just be the class for you! Please join us as we explore dog-on-dog relationships, including the core reasons problems develop, and how to address dog aggression issues if you have one."
+      instructors:
+        - name: Amy Fields
+          affiliation: CARDA/K9 Development
+    - title: K9 Management
+      description: "This class is intended to provide participants with information on various aspects of search dogs and their use in Search and Rescue operations, to include:\n\na) Types of search dogs and their capabilities\n\nb) Planning and realistic assignments\n\n c) Deploying and management of search dog teams\n\n d) Debriefing\n\nThe intended audience are those may participate in various aspects of search overhead although it is open to all that are interested.   Goal is to provide participants with increased knowledge on how to best deploy search dogs as well as their strengths and limitations.\n\nFormat will be interactive with use of a presentation to guide the discussion and actual searches to provide examples."
+      instructors:
+        - name: Wayne Behrens
+          affiliation: BAMRU/CARDA/YODOGS/San Mateo SO
+    - title: K9 Backcountry Searching
+      description: "This class is intended to provide participants with information on searching with a dog in the backcountry, among the topics we will address are:\n\na) Assignments, what is realistic to cover given terrain and altitude\n\n b) Challenges with different types of weather you can encounter\n\n c) Transportation from 4WD, to ATV’s to Helicopters\n\n d) What to carry, or not to carry\n\n e) Flanker, how to train, questions to ask\n\n f) GPS and Radio\n\n g) Got GAR?\n\n The intended audience are K9 handlers who may be new to backcountry searches, but we welcome an open discussion from others with experience in backcountry searches.\n\n  Goal is to provide participants with the knowledge on what to expect and how to conduct backcountry searches with a dog team.\n\nFormat will be interactive with use of a presentation to guide the discussion and actual searches to provide examples. Hands on equipment review.\n\n"
+      instructors:
+        - name: Wayne Behrens
+          affiliation: BAMRU/CARDA/YODOGS/San Mateo SO
+- title: SAR Management
+  leader:
+    name: Michael St. John
+    affiliation: Marin SAR
+  classes:
+    - title: Intro to Sartopo
+      description: "This hands-on class will help build fundamental SARTopo skills, with an emphasis on the initial operational period.  Please bring a laptop, and ideally a phone with the CalTopo app preinstalled.  Skills will include working with coordinates, combining layers, creating objects, printing maps, real-time awareness via the app, and integrating with other tools such as Google Earth and Avenza PDF Maps."
+      instructors:
+        - name: Matt Jacobs 
+          affiliation: BAMRU/TNSAR
+    - title: "Incident Leadership & Safety"
+      description:
+      instructors:
+        - name: Mike St. John
+          affiliation: Marin SAR
+    - title: Advanced Sartopo
+      description: "This hands-on class will cover SARTopo best practices for large or extended incidents, from terrain analysis to track management and IAP preparation.  Please bring a laptop, and ideally a phone with the CalTopo app preinstalled.  Participants should already have a working knowledge of SARTopo, or attend the SAREX basic class."
+      instructors:
+        - name: Matt Jacobs
+          affiliation: BAMRU/TNSAR
+    - title: "Interview and Investigation – Techniques for Search and Rescue Responders"
+      description: 'Interviewing is an important part of search investigation and yet is often a hastily done and incomplete task. In many searches especially in an urban environment, an interview may be the largest generator of clues on where to search.\n\n This workshop will discuss why we need to interview and compare and contrast interview and interrogation in law enforcement and the unique requirements and needs in the Search and Rescue world. It will probe the ""how to"" mechanics of conducting a good interview from the setting for the interview, to the demeanor of the interviewer, to the type of in depth questions and how the information gathered can be used to paint a mental picture and profile of the missing subject. This information can then be used to assist the planning function in establishing where to look and the best use of SAR resources.\n\n The workshop will also include interview practice exercises.'
+      instructors:
+        - name: Chris Young
+          affiliation: Contra Costa Co SAR
+    - title: Debriefing
+      description: "This class is designed to help agencies and their members to set up and conduct valid and effective debriefing interviews."
+      instructors:
+        - name: Jim Kuthy
+          affiliation: El Dorado SAR
+    - title: Fire Aftermath Investigative Search
+      description:
+      instructors:
+        - name: Bryan Sardoch
+          affiliation: Napa SAR
+    - title: Extended Incident Management 
+      description: 'Come learn about new and evolving best practices for managing extended (beyond the first 12-24hr) SAR incidents.  Topics include terrain driven search management, effective segment development, a structured planning process based on the ICS planning "P", operational safety considerations and the preparation of effective written IAPs.'
+      instructors:
+        - name: Matt Jacobs
+          affiliation: BAMRU/TNSAR
+    - title: Lost Person Behavior
+      description: "Lost person behavior is the cornerstone of search and rescue efforts. Based upon a landmark study, this course is based on the book Lost Person Behavior – A Search and Rescue Guide on Where to Look - for Land, Air, and Water by Robert Koester (published 2008 by dbS Publications), and is the definitive guide to solving the puzzle of where a lost person might be found.\n\n This course will cover the latest information and research found in the book regarding the lost person behavioral profiles. Particular emphasis is placed on the latest research concerning Alzheimer's, despondents, mentally retarded, psychotic, abducted children, cross-country skiers, mountain bikers as well as 41 separate categories of lost or missing persons. The participant will learn important background information, its implications for search and rescue, how to establish a prevention program, search statistics, behavioral statistics, and how to plan a search for each subject type. Additional discussion will cover behavioral profiles, urban verses wilderness statistics, suggested initial tasks, and specialized investigative questions. Participants will have the opportunity to work several practical scenarios."
+      instructors:
+        - name: Chris Young
+          affiliation: Contra Costa Co SAR
+    - title: Fundamentals of crime scene management for SAR
+      description: "This course will help SAR members understand the crime scene process with a focus on search methods, crime scene preservation, documentation, photos, evidence collection, and chain of custody."
+      instructors:
+        - name: Celeste Fowler
+          affiliation: CAL-OES
+    - title: California SAR, The Big Picture
+      description: 'National, State, Local SAR -  This is your chance to hear what is happening as a result of national as well as statewide efforts with SAR.  Your State SAR Coordinator will present a briefing as to what is happening Nationwide and how it will affect the State SAR program and you.  From FEMA/NIMS resource typing, to FEMA/NIMS SAR credentialing, to California’s Mutual Aid Guidelines to Legislation. Your State SAR Coordinator, your County SAR Coordinators, and your Sheriffs are very busy protecting and improving upon the State SAR program .  This session will give you the details as well as give you the opportunity to share your concerns, opinions, or ideas. This is your chance to spend time with your State SAR Coordinator and view the “Big Picture” as well as have the opportunity to express your thoughts.'
+      instructors:
+        - name: Mark Baldwin
+          affiliation: CAL-OES
+    - title: Forensic Anthropology Response to to the 2018 Camp Fire Disaster
+      description: "This workshop will discuss the role of forensic anthropology in fire scene recovery and will focus on the 2018 Camp Fire Disaster in Butte County, California. The presentation will address mass fatality management, search and recovery protocols, and logistics in mass fire contexts."
+      instructors:
+        - name: Eric J Martelink, PhD
+          affiliation: CAL State Chico
+- title: Mounted
+  leader:
+    name: Robert Eichstaedt
+    affiliation: Marin SAR
+  classes:
+    - title: Wilderness Large Animal Rescue
+      description: Large Animal Technical Rescue and approach to Loose Livestock in Public Places
+      instructors:
+        - name: John Madigan, DVM
+          affiliation: UC Davis Vet. Emergency Response Team
+    - title: Animal Evac w/ SAR
+      instructors:
+        - name: Julie Atwood
+          affiliation: HALTER
+    - title: ATR Resource - Tools Trainings
+      instructors:
+        - name: Marin SAR ATR Technicians
+          affiliation: Marin SAR
+    - title: Horse Handling and Scene Animal Management
+      instructors:
+        - name: Capt. Halima Jo Robel
+          affiliation: Marin County Sheriff's Posse
+- title: General SAR, including Mantracking & Medical
+  leader:
+    name: Emma Lauter
+    affiliation: Marin SAR
+  classes:
+    - title: Rapid Fire Patient History
+      description: "This class will be a short class on getting the most out of you patient history. There will be a short presentation followed by hands on skill drills."
+      instructors:
+        - name: Kobe Pole
+          affiliation: Marin SAR
+    - title: GPS
+      description: GPS Basics is designed to give you the essentials of setup and use of your GPS. We’ll cover setup basics to make sure the numbers you see on the screen are what you need to effectively find yourself on a map and report back your position.  We’ll also review the steps needed to track your assignment properly, as well as things you’ll want to do at home to preserve your personal past tracks before you start an assignment.  Finally, a checklist of things to do in Base before the start of an assignment to make sure your numbers are accurate and will be of use during a debrief.
+      instructors:
+        - name: Ken Buscho
+          affiliation: CAL-ESAR
+    - title: PLS Investigation
+      description: "Whether it’s an abandoned ATV, empty campsite or the Benz that’s been in the day use trailhead parking lot for two days, they all represent the potential PLS for your missing person search.  All contain clues and evidence that may include the mental state of the missing person, their intentions, destination, direction of travel, equipment, a date and time sequence, scent articles, and more.  Nearly all PLS sites are “fragile” and vulnerable to time, weather and mis-management.  During this field course, learn how to approach the PLS, tips on how to see before touching, legal considerations, and utilizing what is present.\n\n Please note:  This is not a tracking class nor is being trained in mantracking a prerequisite.  Having some knowledge in track awareness will be useful. "
+      instructors:
+        - name: Kim Aufhauser
+          affiliation: Marin SAR
+    - title: Clue Awareness
+      description: "This course will provide an understand of the importance of clues on a search, review negative effects on searcher awareness, discuss ways to improve searcher awareness, introduce tracking nomenclature and basic tasks to perform when a track is found, discuss ways to manage flashlight usage and examine a variety of clues that might be found and how they may appear in the field. Additional topics will include discussion on the importance of tracking, how to detect track traps, and how to form a specialized tracking unit within your team. This course is good for new SAR members or those looking for a strong review."
+      instructors:
+        - name: Del Morris
+          affiliation: Amador Co SAR
+    - title: SAR Navigation Basics I
+      description: "SAR Navigation Basics I & II is a two-part course to cover the essentials of map reading, compass usage and backcountry navigation.\n\n Covers the basics of map reading and interpretation, including scales, contour lines, declination, symbology, location descriptions with USNG and the importance of datums. It will introduce compass skills, and essential skills and techniques for locating yourself, along with a cross country travel methods overview.  The last hour will be a field exercise to practice compass skills, and to introduce the basics of triangulation."
+      instructors:
+        - name: Ken Buscho
+          affiliation: CAL-ESAR
+    - title: "Trauma Lanes: A dynamic and fast paced approach to learning about trauma care"
+      description: "This fast paced, hands on class focuses on evidenced based techniques and best practices for the management of traumatic injuries. The class will be tailored towards SAR EMS providers, and provide just in time training on a variety of critical skills. There will be a high fidelity simulation portion of the class where the participants will face multiple challenging, realistic scenarios incorporating the skills and techniques they have just learned."
+      instructors:
+        - name: Nicholas Koo
+          affiliation: Marin SAR
+    - title: Friendly Forces Tracking Class
+      description:
+      instructors:
+        - name: SSG Billy Wade
+          affiliation: Intelligence Awareness, Army National Guard
+    - title: Assessment (UAS integration course)
+      description:
+      instructors:
+        - name: Major Megan Stromberg
+          affiliation: Army National Guard
+    - title: Emergency Medical Care Review for Search and Rescue
+      description: "SAR personnel are in the unique situation where they may be called upon to perform lifesaving emergency medical care in remote settings and be required to continue this care for hours.  This hands-on course will give the SAR team member an opportunity to refresh their knowledge and practice how to stop severe bleeding, open and maintain a patient’s airway, tips on moving and packaging the patient, taking vitals, clearing the c-spine, management of the hypothermic patient, proper documentation, and more."
+      instructors:
+        - name: Kim Aufhauser
+          affiliation: Marin SAR
+    - title: What to do when you discover tracks
+      description: "Field component to intro course provided in the am and aimed at beginner SAR members or those looking to review. Course objectives include understanding the importance of tracks on a search, ways to improve track awareness, and understanding the importance of tracking and how to detect track traps. Participants will examine a variety of human tracks to see how they may appear in the field and will be introduced to tracking nomenclature and basic tasks to perform when a track is found. Additional topics include discussing ways to manage track information, necessary tasks related to finding tracks and their follow-up, and how to form a specialized tracking unit within your team."
+      instructors:
+        - name: Del Morris
+          affiliation: Amador Co SAR
+    - title: Mental Health and SAR
+      description: "This course will discuss how mental health conditions influence search subject behavior and considerations for how that may impact searching. Resources for better understanding mental health conditions will be introduced. The course will also discuss searcher mental health."
+      instructors:
+        - name: Lindsay Chromik
+          affiliation: BAMRU
+    - title: SAR Navigation Basics II
+      description: "A field-based, cross country navigation module that builds on the concepts introduced in SAR Navigation Basics I. After reviewing compass basics and cross country travel methods, you will be given an opportunity to go out with a team on an assignment to develop and reinforce leapfrogging, handrails, catching features, offsets and other cross country travel methods.\n\n In addition to traditional paper maps, we’ll utilize SARTOPO and GeoPDF maps and software to bring these skills up to meet modern standards of practice."
+      instructors:
+        - name: Ken Buscho
+          affiliation: CAL-ESAR
+    - title: SAR Adventure Challenge Course
+      description: "Up to 8 teams of 6 will navigate through Walker Creek and test their skills in various forms of navigation, medical, and technical rope. This course will test team's abilities to work through scenarios and move quickly in steep terrain."
+      instructors:
+        - name: Bob Gehlen
+          affiliation: Marin SAR
+
+

@@ -125,65 +125,61 @@ layout: default
       />
     </div>
   </section>
-  <section class="tracks">
+  <section class="tracks" id="tracks">
     <div class="row jc-c">
       <h2>Tracks</h2>
     </div>
     <div class="well">
       <p>SAREX 2019 have a number of different class tracks, including:</p>
-      <ul>
-        <li>
-          Air Ops
-          <em>Travis Wiley, Napa SAR</em>
-        </li>
-        <li>
-          Drone Ops
-          <em>
-            Lt. Richard Hassna, Alameda County Sheriff’s Office
-          </em>
-        </li>
-        <li>
-          Technical Rope Rescue
-          <em>John Chang, Bay Area Mountain Rescue Unit (BAMRU)</em>
-        </li>
-        <li>
-          USAR
-          <em>
-            Randy Englar, Batallion Chief, Marin County Fire Department
-          </em>
-        </li>
-        <li>
-          OHV/ATV
-          <em>
-            Kurt Stocks, El Dorado SAR
-          </em>
-        </li>
-        <li>
-          K9
-          <em>
-            Shay Cook, Marin SAR
-          </em>
-        </li>
-        <li>
-          SAR Management
-          <em>
-            Michael St. John, Marin SAR
-          </em>
-        </li>
-        <li>
-          Mounted
-          <em>
-            Robert Eichstaedt, Marin SAR
-          </em>
-        </li>
-        <li>
-          General SAR (includes mantracking and medical)
-          <em>
-            Emma Lauter, Marin SAR
-          </em>
-        </li>
-      </ul>
-      <p>More info coming soon.</p>
+        {% for track in site.data.tracks %}
+        <div class="track">
+          <div class="track-header">
+            <div class="track-title">{{ track.title }}</div>
+	    <div class="track-affiliate">
+	      <div class="track-affiliate-name">{{ track.leader.name }}</div>
+	      {% if track.leader.affiliation.size > 0 %}
+	      <div class="track-affiliate-affiliation">{{ track.leader.affiliation }}</div>
+	      {% endif %}
+	    </div>
+          </div>
+          {% if track.classes.size > 0 %}
+          <div class="track-courses">
+            {% for class in track.classes %}
+            <div class="track-course">
+	      <div class="track-course-header">
+		<div class="track-course-title">
+		  {{ class.title }}
+		</div>
+                {% if class.instructors.size > 0 %}
+                <div class="track-course-instructors">
+		  {% for instructor in class.instructors %}
+		  <div class="track-affiliate">
+		    <div class="track-affiliate-name">{{ instructor.name }}</div>
+		    {% if instructor.affiliation.size > 0 %}
+		    <div class="track-affiliate-affiliation">{{ instructor.affiliation }}</div>
+		    {% endif %}
+		  </div>
+		  {% endfor %}
+                </div>
+                {% endif %}
+	      </div>
+              {% if class.description.size > 0 %}
+              {% if class.description.size > 0 %}
+              <div class="track-course-details-toggle">
+                Description &raquo;
+              </div>
+              {% endif %}
+              <div class="track-course-details">
+                {{ class.description | markdownify }}
+              </div>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      <p>Complete track information and courses coming soon.</p>
     </div>
   </section>
   <section class="location">
@@ -206,5 +202,24 @@ layout: default
       src="/assets/images/walker_creek.jpeg"
     />
   </section>
+  <script>
+    function toggleTrackDetails(e) {
+      e
+        .target
+        .parentNode
+        .querySelector('.track-course-details')
+        .classList
+        .toggle('active')
+
+      e
+        .target
+        .classList
+        .toggle('active')
+    }
+
+    document
+      .querySelectorAll('.track-course-details-toggle')
+      .forEach(node => node.onclick = toggleTrackDetails)
+  </script>
   <script src="/assets/scripts/slideshow.js"></script>
 </div>
