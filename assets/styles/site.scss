@@ -262,6 +262,12 @@ footer p {
   flex-wrap: wrap;
 }
 
+@media (max-width: 700px) {
+  .home .splash .slideshow {
+    display: none;
+  }
+}
+
 .home .splash .slideshow {
   padding: 0;
   margin: 0;
@@ -370,6 +376,18 @@ footer p {
   height: 350px;
 }
 
+@media (max-width: 900px) {
+  .home .keynote .bio-and-picture {
+    flex-direction: column;
+  }
+
+  .home .keynote .blurb {
+    order: 1;
+    margin-right: 0;
+    margin-top: 30px;
+  }
+}
+
 .track {
   padding: 10px 15px;
   background: var(--gray-1);
@@ -462,6 +480,7 @@ footer p {
 .home .location img {
   margin: 30px 0;
   width: 600px;
+  max-width: 100%;
 }
 
 .rfp-page {
