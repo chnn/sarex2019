@@ -7,19 +7,20 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header class="site-header">
       <div class="logo"><a title="Home" href="/"><img src="/assets/images/logo.png" title="SAREX 2019 Logo"></img></a></div>
       <nav>
         <a href="/" title="Home" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
-        <a href="/faq" title="FAQ" {% if page.url == "/faq.html" %}class="active"{% endif %}>FAQ</a>
-        <a href="/lodging" title="Lodging & Meals" {% if page.url == "/lodging.html" %}class="active"{% endif %}>Lodging & Meals</a>
+        <a href="/tracks" title="Tracks" {% if page.url == "/tracks.html" %}class="active"{% endif %}>Schedule/Classes</a>
+        <a href="/lodging" title="Lodging & Meals" {% if page.url == "/lodging.html" %}class="active"{% endif %}>Lodging/Meals</a>
         <a href="/location" title="Location" {% if page.url == "/location.html" %}class="active"{% endif %}>Location</a>
+        <a href="/faq" title="FAQ" {% if page.url == "/faq.html" %}class="active"{% endif %}>FAQ</a>
         <a href="/vendors" title="Vendors" {% if page.url == "/vendors.html" %}class="active"{% endif %}>Vendors</a>
         <a href="/sponsors" title="Sponsors" {% if page.url == "/sponsors.html" %}class="active"{% endif %}>Sponsors</a>
       </nav>
     </header>
     {{ content }}
-    <footer>
+    <footer class="site-footer">
       <div class="badges">
         <img class="marin-badges" title="Marin SAR logo" src="/assets/images/marin_badge.png"></img>
         <img class="sheriff-badge" title="Marin Sheriff badge" src="/assets/images/sheriff_badge.png"></img>

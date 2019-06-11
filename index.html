@@ -127,57 +127,16 @@ layout: default
   </section>
   <section class="tracks" id="tracks">
     <div class="row jc-c">
-      <h2>Tracks</h2>
+      <h2>Tracks & Courses</h2>
     </div>
     <div class="well">
-      <p>SAREX 2019 have a number of different class tracks, including:</p>
-        {% for track in site.data.tracks %}
-        <div class="track">
-          <div class="track-header">
-            <div class="track-title">{{ track.Name }}</div>
-	    <div class="track-affiliate">
-	      <div class="track-affiliate-name">{{ track.Leader.Name }}</div>
-	      {% if track.Leader.Affiliation.size > 0 %}
-	      <div class="track-affiliate-affiliation">{{ track.Leader.Affiliation }}</div>
-	      {% endif %}
-	    </div>
-          </div>
-          {% if track.Courses.size > 0 %}
-          <div class="track-courses">
-            {% for course in track.Courses %}
-            <div class="track-course">
-	      <div class="track-course-header">
-		<div class="track-course-title">
-		  {{ course.Title }}
-		</div>
-                {% if course.Instructors.size > 0 %}
-                <div class="track-course-instructors">
-		  {% for instructor in course.Instructors %}
-		  <div class="track-affiliate">
-		    <div class="track-affiliate-name">{{ instructor.Name }}</div>
-		    {% if instructor.Affiliation.size > 0 %}
-		    <div class="track-affiliate-affiliation">{{ instructor.Affiliation }}</div>
-		    {% endif %}
-		  </div>
-		  {% endfor %}
-                </div>
-                {% endif %}
-	      </div>
-              {% if course.Description.size > 0 %}
-              <div class="track-course-details-toggle">
-                Description &raquo;
-              </div>
-              <div class="track-course-details">
-                {{ course.Description | markdownify }}
-              </div>
-              {% endif %}
-            </div>
-            {% endfor %}
-          </div>
-          {% endif %}
-        </div>
-        {% endfor %}
-      <p>Complete track information and courses coming soon.</p>
+      <p>SAREX 2019 have a number of different course tracks, including:</p>
+        <ul>
+          {% for track in site.data.tracks %}
+          <li>{{ track.Name }}</li>
+          {% endfor %}
+        </ul>
+        <p>For complete course information, check out the <a href="/tracks.html" title="Schedule & Classes">Schedule & Classes page</a>.</p>
     </div>
   </section>
   <section class="location">
@@ -200,24 +159,5 @@ layout: default
       src="/assets/images/walker_creek.jpeg"
     />
   </section>
-  <script>
-    function toggleTrackDetails(e) {
-      e
-        .target
-        .parentNode
-        .querySelector('.track-course-details')
-        .classList
-        .toggle('active')
-
-      e
-        .target
-        .classList
-        .toggle('active')
-    }
-
-    document
-      .querySelectorAll('.track-course-details-toggle')
-      .forEach(node => node.onclick = toggleTrackDetails)
-  </script>
   <script src="/assets/scripts/slideshow.js"></script>
 </div>

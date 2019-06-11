@@ -1,0 +1,100 @@
+---
+title: SAREX 2019 | Schedule
+layout: default
+---
+
+<div class="tracks-page page well">
+  <h2>Schedule</h2>
+  <div class="schedule">
+    {% assign slots = "Friday, Saturday Morning, Saturday Evening, Sunday Morning" | split: ", " %}
+    {% for slot in slots %}
+    <table id="{{ slot }}">
+      <thead>
+        <tr>
+          <th colspan="2" class="time-slot">
+            <h3>
+              <a class="anchor" href="/tracks.html#{{ slot }}" title="{{ slot }} Schedule">
+                {{ slot }}
+              </a>
+            <h3>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for track in site.data.tracks %}
+        <tr>
+          <td class="track-name">
+            {{ track.Name }}
+          </td>
+          <td class="courses">
+            {% assign courses = track.Courses | where: "Time Slot", slot %}
+            {% for course in courses %}
+            <div class="track-course">
+              <a href="/tracks.html#{{ course.Title }}" title="Course Details" class="anchor">
+                {{ course.Title }}
+              </a>
+            </div>
+            {% endfor %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endfor %}
+  </div>
+  <h2 class="all-courses">All Courses</h2>
+  {% for track in site.data.tracks %}
+  <h3 class="track-name" id="{{ track.Name }}">
+    <a class="anchor" href="/tracks.html#{{ track.Name }}">
+      {{ track.Name }}
+    </a>
+  </h3>
+  {% if track.Courses.size > 0 %}
+  {% for course in track.Courses %}
+  <div class="course-card" title="{{ course.Title }}">
+    <header>
+      <div class="title" id="{{ course.Title }}">
+        <h4>
+          <a class="anchor" href="/tracks.html#{{ course.Title }}">
+            {{ course.Title }}
+          </a>
+        </h4>
+        <div class="time-slot">{{ course["Time Slot"] }}</div>
+      </div>
+      {% if course.Instructors.size > 0 %}
+      <div class="instructors">
+        {% for instructor in course.Instructors %}
+        <div class="instructor {% if instructor.Bio.size > 0 %}has-bio{% endif %}">
+          <span class="name">{{ instructor.Name }}</span>{% if instructor.Affiliation.size > 0 %}<span class="affiliation">{{ instructor.Affiliation }}</span>{% endif %}
+          {% if instructor.Bio.size > 0 %}
+          <div class="bio">{{ instructor.Bio | markdownify }}</div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </header>
+    {% if course.Description.size > 0 %}
+    <div class="description">
+      {{ course.Description | markdownify }}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+  {% endif %}
+  {% endfor %}
+</div>
+<script>
+  function toggleBio(e) {
+    e
+      .target
+      .parentNode
+      .querySelector('.bio')
+      .classList
+      .toggle('active')
+  }
+
+  const instructors = document.querySelectorAll('.course-card .instructor.has-bio')
+  
+  instructors.forEach(node => node.onclick = toggleBio)
+</script>
