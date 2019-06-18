@@ -27,6 +27,11 @@ layout: default
         <tr>
           <td class="track-name">
             {{ track.Name }}
+            {% if slot == "Friday Evening" %}
+            {% if track.Name == "K9" or track.Name == "USAR" %}
+            *
+            {% endif %}
+            {% endif %}
           </td>
           <td class="courses">
             {% for course in courses %}
@@ -43,6 +48,9 @@ layout: default
       </tbody>
     </table>
     {% endfor %}
+    <p class="alert">
+      <span>* Note</span> The Friday K9 and USAR courses will require special pre-conference registration.
+    </p>
   </div>
   <h2 class="all-courses">All Courses</h2>
   {% for track in site.data.tracks %}
