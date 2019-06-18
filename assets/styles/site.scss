@@ -215,7 +215,7 @@ li {
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 30px 0;
 }
 
@@ -239,18 +239,65 @@ li {
 
 .site-header nav a {
   display: block;
-  margin: 10px 0 10px 25px;
-  padding-bottom: 4px;
 }
 
-.site-header nav a.active {
+.site-header nav a {
+  z-index: 20;
+}
+
+.site-header nav > a {
+  margin-left: 25px;
+  padding-bottom: 8px;
+}
+
+.site-header nav > a.active, .site-header nav > a:hover {
+  padding-bottom: 0px;
   border-bottom: 4px solid var(--green-8);
-  margin-bottom: 6px;
 }
 
-.site-header nav a:hover {
+.site-header nav > a.active {
+  border-bottom: 4px solid var(--green-8);
+}
+  
+.site-header nav > a:hover {
   border-bottom: 4px solid var(--green-6);
-  margin-bottom: 6px;
+}
+
+.site-header nav section {
+  position: relative;
+  overflow: visible;
+}
+
+.site-header nav section ul {
+  position: absolute;
+  background: var(--green-6);
+  border-radius: var(--radius-b);
+  padding: calc(var(--margin-c) + 40px) var(--margin-d) var(--margin-b) var(--margin-d);
+  top: calc(0px - var(--margin-c));
+  right: calc(0px - var(--margin-c));
+  list-style: none;
+  margin: 0;
+  z-index: 10;
+  display: none;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.site-header nav section:hover ul {
+  display: inherit;
+}
+
+.site-header nav section:hover a {
+  color: var(--gray-0);
+}
+
+.site-header nav section:hover a:hover {
+  color: var(--gray-1);
+}
+
+.site-header nav section li {
+  margin: 0;
+  padding: 0;
 }
 
 .site-footer {
