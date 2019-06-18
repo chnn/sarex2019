@@ -6,7 +6,7 @@ layout: default
 <div class="tracks-page page well">
   <h2>Schedule</h2>
   <div class="schedule">
-    {% assign slots = "Friday, Saturday Morning, Saturday Evening, Sunday Morning" | split: ", " %}
+    {% assign slots = "Friday Evening, Saturday Morning, Saturday Afternoon, Sunday Morning" | split: ", " %}
     {% for slot in slots %}
     <table id="{{ slot }}">
       <thead>
@@ -22,12 +22,13 @@ layout: default
       </thead>
       <tbody>
         {% for track in site.data.tracks %}
+        {% assign courses = track.Courses | where: "Time Slot", slot %}
+        {% if courses.size > 0 %}
         <tr>
           <td class="track-name">
             {{ track.Name }}
           </td>
           <td class="courses">
-            {% assign courses = track.Courses | where: "Time Slot", slot %}
             {% for course in courses %}
             <div class="track-course">
               <a href="/tracks.html#{{ course.Title }}" title="Course Details" class="anchor">
@@ -37,6 +38,7 @@ layout: default
             {% endfor %}
           </td>
         </tr>
+        {% endif %}
         {% endfor %}
       </tbody>
     </table>
