@@ -283,7 +283,7 @@ li {
   white-space: nowrap;
 }
 
-.site-header nav section:hover ul {
+.site-header nav section:hover ul, .site-header nav section:active ul {
   display: inherit;
 }
 
