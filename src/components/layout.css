@@ -1,6 +1,3 @@
----
----
-
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:700,700i');
 
@@ -70,7 +67,7 @@ body {
   font-family: var(--font-body);
   font-size: var(--font-size-c);
   color: var(--blue-9);
-  background-image: url('/assets/images/topo.png');
+  background-image: url('../images/topo.png');
   background-size: 400px;
 }
 
@@ -78,6 +75,7 @@ body {
   position: relative;
   width: 95%;
   max-width: 960px;
+  min-width: 600px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -215,7 +213,7 @@ li {
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: var(--margin-f) 0;
 }
 
@@ -227,31 +225,75 @@ li {
 .site-header nav {
   display: flex;
   margin-left: 25px;
+  align-items: center;
 }
 
-@media (max-width: 800px) {
-  .site-header nav {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.site-header nav > * {
+  margin-left: 25px;
 }
 
-.site-header nav a {
+.site-header nav > a {
   display: block;
-  margin: 10px 0 10px 25px;
-  padding-bottom: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.site-header nav a.active {
+.site-header nav > a.active:not(.button) {
   border-bottom: 4px solid var(--green-8);
   margin-bottom: 6px;
 }
 
-.site-header nav a:hover {
+.site-header nav > a:hover:not(.button) {
   border-bottom: 4px solid var(--green-6);
   margin-bottom: 6px;
 }
+
+.site-header .link-group {
+  position: relative;
+  height: 41px;
+  width: 200px;
+}
+
+.site-header .link-group .title {
+  top: var(--margin-b);
+  right: var(--margin-c);
+  z-index: 2;
+  color: var(--green-8);
+  position: absolute;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.site-header .link-group.active .title {
+  color: var(--gray-0);
+}
+
+.site-header .link-group .links {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  width: 175px;
+  padding: var(--margin-b) var(--margin-c);
+  padding-top: calc(var(--margin-b) + 50px);
+  background: var(--green-6);
+  border-radius: var(--margin-b);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.site-header .link-group.active .links {
+  visibility: inherit;
+}
+
+.site-header .link-group a {
+  display: block;
+  color: var(--gray-0);
+}
+
+.site-header .link-group a:hover {
+  color: var(--gray-2);
+}
+
 
 .site-footer {
   margin-top: 40px;
@@ -266,13 +308,11 @@ li {
 }
 
 .site-footer .oes-badge {
-  height: 90px;
   margin-left: 15px;
 }
 
 .site-footer p {
   font-weight: bold;
-  /* font-style: italic; */
   color: var(--gray-6);
   margin-left: 60px;
 }
@@ -342,20 +382,8 @@ li {
   }
 }
 
-.home .splash .slideshow li {
-  list-style: none;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: fade-out 1s;
-}
-
-.home .splash .slideshow li.active {
-  opacity: 1;
-  position: relative;
-  overflow: hidden;
-  animation: fade-in 1s;
+.home .splash .slideshow-image {
+  animation: fade-in 0.5s;
 }
 
 .home .splash .blurb {
@@ -418,10 +446,6 @@ li {
   margin-top: 0;
 }
 
-.home .keynote img {
-  height: 350px;
-}
-
 @media (max-width: 900px) {
   .home .keynote .bio-and-picture {
     flex-direction: column;
@@ -438,10 +462,9 @@ li {
   text-align: center;
 }
 
-.home .location img {
-  margin: 30px 0;
-  width: 600px;
-  max-width: 100%;
+.home .walker-creek-picture {
+  margin: 30px auto;
+  max-width: 600px;
 }
 
 .rfp-page {
@@ -449,7 +472,7 @@ li {
   justify-content: center;
 }
 
-.location-page img {
+.location-page picture {
   max-width: 100%;
   margin: 0 auto 20px auto;
 }
@@ -541,14 +564,8 @@ li {
 }
 
 .course-card .bio {
-  display: none;
-  margin-left: var(--margin-c);
-  margin-right: var(--margin-c);
+  margin: var(--margin-c);
   font-style: italic;
-}
-
-.course-card .bio.active {
-  display: inherit;
 }
 
 .course-card .description {
@@ -564,20 +581,13 @@ li {
 }
 
 .schedule {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
   font-size: var(--font-size-b);
-}
-
-@media (max-width: 1000px) {
-  .schedule {
-    justify-content: center;
-  }
+  width: 100%;
+  position: relative;
 }
 
 .schedule table {
+  width: 100%;
 }
 
 .schedule table tbody {
@@ -592,24 +602,50 @@ li {
   padding: var(--margin-c);
 }
 
-.schedule td.time-slot {
-  text-align: center;
-}
-
 .schedule td.track-name {
   font-weight: bold;
-  width: 150px;
-}
-
-.schedule td.courses {
 }
 
 .schedule .track-course {
-  width: 220px;
   margin: var(--margin-c) var(--margin-b);
   line-height: 140%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.loading-text {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes loading-dots {
+  0% {
+    content: " "
+  }
+
+  25% {
+    content: "."
+  }
+
+  50% {
+    content: ".."
+  }
+
+  75% {
+    content: "..."
+  }
+  
+  100% {
+    content: " "
+  }
+}
+
+.loading-text::after {
+  animation: 2s linear loading-dots infinite;
+  content: "..."
 }
 
