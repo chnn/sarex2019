@@ -1,12 +1,10 @@
 import * as React from "react"
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 const VendorsPage = () => {
   return (
-    <Layout>
-      <SEO title="Vendors" />
+    <Layout title="Vendors">
       <div className="vendors-page page well">
         <h2>Vendors</h2>
         <p>

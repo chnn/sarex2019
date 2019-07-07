@@ -1,0 +1,21 @@
+.site-footer {
+  margin-top: 40px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-footer__sheriff-badge {
+  margin-left: 15px;
+}
+
+.site-footer__oes-badge {
+  margin-left: 15px;
+}
+
+.site-footer p {
+  font-weight: bold;
+  color: var(--gray-6);
+  margin-left: 60px;
+}

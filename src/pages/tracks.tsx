@@ -3,10 +3,10 @@ import { Fragment } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import ScheduleTable from "../components/ScheduleTable"
 import CourseCard from "../components/CourseCard"
+import "./tracks.css"
 
 const TracksPage = () => {
   const {
@@ -50,8 +50,7 @@ const TracksPage = () => {
   ]
 
   return (
-    <Layout>
-      <SEO title="Schedule & Classes" />
+    <Layout title="Schedule & Classes">
       <div className="tracks-page page well">
         <h2>Schedule</h2>
         <div className="schedule">

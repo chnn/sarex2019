@@ -4,6 +4,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import useInterval from "@rooks/use-interval"
 
+import "./Slideshow.css"
+
 const Slideshow = () => {
   const data = useStaticQuery(graphql`
     query {

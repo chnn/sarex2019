@@ -1,0 +1,239 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:700,700i");
+
+:root {
+  --font-display: "Fira Sans Condensed", sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+
+  --font-size-a: 14px;
+  --font-size-b: 16px;
+  --font-size-c: 18px;
+  --font-size-d: 22px;
+  --font-size-e: 30px;
+  --font-size-f: 36px;
+  --font-size-g: 44px;
+  --font-size-h: 56px;
+
+  --media-sm: 800px;
+
+  --radius-a: 2px;
+  --radius-b: 4px;
+
+  --margin-a: 3px;
+  --margin-b: 6px;
+  --margin-c: 12px;
+  --margin-d: 20px;
+  --margin-e: 30px;
+  --margin-f: 40px;
+  --margin-g: 80px;
+
+  --blue-1: #f6fffe;
+  --blue-2: #d9eaf3;
+  --blue-4: #96ccff;
+  --blue-6: #357edd;
+  --blue-7: #00449e;
+  --blue-9: #001b44;
+
+  --gray-0: #fafafa;
+  --gray-1: #ecf0f1;
+  --gray-2: #bdc3c7;
+  --gray-3: #95a5a6;
+  --gray-4: #7f8c8d;
+  --gray-5: #34495e;
+  --gray-7: #2c3e50;
+  --gray-8: #1b242d;
+  --gray-9: #000000;
+
+  --red-1: #ffdfdf;
+  --red-3: #ff725c;
+  --red-6: #ff4136;
+  --red-9: #e7040f;
+
+  --yellow-1: #fffceb;
+  --yellow-3: #fbf1a9;
+  --yellow-6: #ffde37;
+  --yellow-7: #ffb700;
+  --yellow-8: #ff6300;
+
+  --green-1: #e8fdf5;
+  --green-2: #deedd9;
+  --green-3: #c7e4ca;
+  --green-6: #19a974;
+  --green-8: #137752;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-c);
+  color: var(--blue-9);
+  background-image: url("../images/topo.png");
+  background-size: 400px;
+}
+
+.container {
+  position: relative;
+  width: 95%;
+  max-width: 960px;
+  min-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.row.jc-e {
+  justify-content: flex-end;
+}
+
+.row.jc-c {
+  justify-content: center;
+}
+
+.row.jc-s {
+  justify-content: flex-start;
+}
+
+.row.ai-s {
+  align-items: flex-start;
+}
+
+.row.ai-c {
+  align-items: center;
+}
+
+.row.ai-e {
+  align-items: flex-end;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--font-size-h);
+}
+
+h2 {
+  font-size: var(--font-size-g);
+}
+
+h3 {
+  font-size: var(--font-size-f);
+}
+
+h3 {
+  font-size: var(--font-size-e);
+}
+
+h4 {
+  font-size: var(--font-size-d);
+}
+
+h5 {
+  font-size: var(--font-size-c);
+}
+
+h6 {
+  font-size: var(--font-size-b);
+}
+
+button,
+input {
+  border-radius: var(--radius-b);
+  background: var(--blue-0);
+  border: 2px solid var(--blue-9);
+  padding: 8px;
+}
+
+input[type="email"] {
+  background: white;
+}
+
+button,
+input[type="submit"] {
+  font-family: var(--font-display);
+  font-weight: bold;
+  background: var(--green-8);
+  color: var(--gray-0);
+  border: none;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  transition: 0.15s;
+  background: var(--green-6);
+}
+
+a {
+  text-decoration: none;
+  color: var(--green-8);
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+a:hover {
+  color: var(--green-6);
+}
+
+a.anchor {
+  color: inherit;
+  font-weight: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a.anchor:hover {
+  color: inherit;
+}
+
+p {
+  line-height: 140%;
+  margin: var(--margin-c) 0;
+}
+
+hr {
+  border-style: none;
+  border-bottom: 1px solid var(--gray-3);
+}
+
+li {
+  line-height: 140%;
+}
+
+.alert {
+  background: var(--blue-2);
+  padding: 16px;
+  border-radius: var(--radius-b);
+  border: 1px solid var(--blue-4);
+  text-align: center;
+  margin-bottom: 25px;
+  width: 100%;
+
+  span {
+    font-weight: bold;
+    color: var(--blue-9);
+    margin-right: 5px;
+    font-variant: all-small-caps;
+  }
+}
+
+.well {
+  background: #f9f8f8;
+  padding: var(--margin-f);
+  border-radius: var(--radius-b);
+  box-shadow: 1px 1px 3px #c1c1c1;
+}
+
+.page.well {
+  padding-top: var(--margin-c);
+}

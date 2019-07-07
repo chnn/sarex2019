@@ -1,0 +1,94 @@
+.home-page .alert {
+  margin: 0 0 30px 0;
+}
+
+.home-page .well {
+  padding: 30px;
+}
+
+.home-page .splash {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home-page .splash .blurb {
+  flex: 1 1 0;
+  margin-left: 20px;
+}
+
+.home-page .splash .blurb .break {
+  width: 60px;
+  height: 3px;
+  margin: 30px 0;
+  background-color: var(--green-8);
+}
+
+.home-page .splash .blurb form .form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home-page .splash .blurb form .form-group input {
+  margin-left: 10px;
+  flex: 1 1 0;
+}
+
+.home-page .splash .blurb form input[type="submit"] {
+  width: 100%;
+}
+
+.home-page .splash .blurb p:first-child {
+  margin-top: 0;
+}
+
+.home-page h2 {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+}
+
+.home-page h2:before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--green-3);
+  z-index: -1;
+}
+
+.home-page .keynote .blurb {
+  flex: 1 1 50%;
+  margin-right: 50px;
+}
+
+.home-page .keynote .blurb p:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .home-page .keynote .bio-and-picture {
+    flex-direction: column;
+  }
+
+  .home-page .keynote .blurb {
+    order: 1;
+    margin-right: 0;
+    margin-top: 30px;
+  }
+}
+
+.home-page .location {
+  text-align: center;
+}
+
+.home-page .walker-creek-picture {
+  margin: 30px auto;
+  max-width: 600px;
+}

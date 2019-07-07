@@ -1,0 +1,28 @@
+.schedule-table {
+  width: 100%;
+}
+
+.schedule-table tbody {
+  border: 1px solid var(--gray-1);
+}
+
+.schedule-table tbody tr:nth-child(2n + 1) {
+  background: var(--gray-1);
+}
+
+.schedule-table td,
+.schedule-table th {
+  padding: var(--margin-c);
+}
+
+.schedule-table td.track-name {
+  font-weight: bold;
+}
+
+.schedule-table .track-course {
+  margin: var(--margin-c) var(--margin-b);
+  line-height: 140%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

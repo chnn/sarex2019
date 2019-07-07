@@ -1,6 +1,8 @@
 import * as React from "react"
 import { useEffect } from "react"
 
+import LoadingText from "../components/LoadingText"
+
 const useExpoScript = key => {
   useEffect(() => {
     const js = document.createElement("script")
@@ -16,7 +18,7 @@ const useExpoScript = key => {
 
   return (
     <div id="IframeDivId">
-      <div className="loading-text">Loading registration form</div>
+      <LoadingText text="Loading registration form" />
     </div>
   )
 }

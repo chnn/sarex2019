@@ -1,0 +1,21 @@
+.slideshow {
+  padding: 0;
+  margin: 0;
+  flex: 1 1 0;
+  margin-right: 20px;
+  position: relative;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.slideshow-image {
+  animation: fade-in 0.5s;
+}

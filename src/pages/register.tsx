@@ -1,16 +1,14 @@
 import * as React from "react"
 import { useEffect } from "react"
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import useExpoScript from "../utils/useExpoScript"
 
 const RegistrationPage = () => {
   const expoDiv = useExpoScript("9jQ7bXl")
 
   return (
-    <Layout>
-      <SEO title="Register" />
+    <Layout title="Register">
       <div className="page well registration">
         <h2>Register for SAREX 2019</h2>
         {expoDiv}

@@ -2,8 +2,8 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
+import "./sponsors.css"
 
 const SponsorsPage = () => {
   const data = useStaticQuery(graphql`
@@ -19,8 +19,7 @@ const SponsorsPage = () => {
   `)
 
   return (
-    <Layout>
-      <SEO title="Sponsors" />
+    <Layout title="Sponsors">
       <div className="sponsor-page page well">
         <h2>Sponsors</h2>
         <p>

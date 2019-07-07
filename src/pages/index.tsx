@@ -2,9 +2,9 @@ import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Slideshow from "../components/slideshow"
+import Layout from "../components/Layout"
+import Slideshow from "../components/Slideshow"
+import "./index.css"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -38,9 +38,8 @@ const IndexPage = () => {
   const trackNames = data.allTracksJson.edges.map(({ node: { name } }) => name)
 
   return (
-    <Layout>
-      <SEO title="Home" />
-      <div className="home">
+    <Layout title="Home">
+      <div className="home-page">
         <section className="splash">
           <Slideshow />
           <div className="blurb">

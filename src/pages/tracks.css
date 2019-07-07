@@ -1,0 +1,10 @@
+.tracks-page h3.track-name,
+.tracks-page h2.all-courses {
+  margin-top: var(--margin-g);
+}
+
+.schedule {
+  font-size: var(--font-size-b);
+  width: 100%;
+  position: relative;
+}

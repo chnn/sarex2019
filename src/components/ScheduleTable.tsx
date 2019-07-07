@@ -2,9 +2,11 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import "./ScheduleTable.css"
+
 const ScheduleTable = ({ timeSlot, tracks }) => {
   return (
-    <table id={timeSlot}>
+    <table id={timeSlot} className="schedule-table">
       <thead>
         <tr>
           <th colSpan={2} className="time-slot">

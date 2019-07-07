@@ -1,12 +1,10 @@
 import * as React from "react"
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 const CodeOfConductPage = () => {
   return (
-    <Layout>
-      <SEO title="Code of Conduct" />
+    <Layout title="Code of Conduct">
       <div className="page code-of-conduct well">
         <h2>SAREX 2019 Code of Conduct</h2>
         <h3>Expectations</h3>

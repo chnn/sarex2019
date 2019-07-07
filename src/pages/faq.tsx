@@ -1,12 +1,10 @@
 import * as React from "react"
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 const FAQPage = () => {
   return (
-    <Layout>
-      <SEO title="FAQ" />
+    <Layout title="FAQ">
       <div className="faq-page page well">
         <h2>FAQ</h2>
         <h3>

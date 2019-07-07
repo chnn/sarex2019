@@ -2,8 +2,8 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
+import "./location.css"
 
 const LocationPage = () => {
   const data = useStaticQuery(graphql`
@@ -27,8 +27,7 @@ const LocationPage = () => {
   `)
 
   return (
-    <Layout>
-      <SEO title="Location" />
+    <Layout title="Location">
       <div className="location-page page well">
         <h2>Location</h2>
         <p>

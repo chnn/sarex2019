@@ -1,13 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 const LodgingPage = () => {
   return (
-    <Layout>
-      <SEO title="Lodging & Meals" />
+    <Layout title="Lodging & Meals">
       <div className="lodging-page page well">
         <h2>Lodging & Meals</h2>
         <p>
