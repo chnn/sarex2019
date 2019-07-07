@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
@@ -14,9 +15,9 @@ const LodgingPage = () => {
           participants. All accomodations will include access to restrooms and
           showers and potable water. All meals are provided by Walker Creek
           Ranch. Most dietary restrictions can be accoomdated. Please see the{" "}
-          <a href="/faq" title="FAQ">
+          <Link to="/faq" title="FAQ">
             FAQ
-          </a>{" "}
+          </Link>{" "}
           for more details regarding dietary concerns.
         </p>
         <h3>Tent Camping</h3>

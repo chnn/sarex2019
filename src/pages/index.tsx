@@ -155,9 +155,9 @@ const IndexPage = () => {
             </ul>
             <p>
               For complete course information, check out the{" "}
-              <a href="/tracks.html" title="Schedule & Classes">
+              <Link to="/tracks" title="Schedule & Classes">
                 Schedule & Classes page
-              </a>
+              </Link>
               .
             </p>
           </div>
