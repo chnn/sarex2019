@@ -2,9 +2,14 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import sortBy from "../utils/sortBy"
 import "./ScheduleTable.css"
 
 const ScheduleTable = ({ timeSlot, tracks }) => {
+  const sortedTracks = [...tracks]
+
+  sortedTracks.sort((a, b) => a.name.localeCompare(b.name))
+
   return (
     <table id={timeSlot} className="schedule-table">
       <thead>
@@ -23,7 +28,7 @@ const ScheduleTable = ({ timeSlot, tracks }) => {
         </tr>
       </thead>
       <tbody>
-        {tracks.map(track => {
+        {sortBy(tracks, "name").map(track => {
           const courses = track.courses.filter(
             course => course.timeSlot === timeSlot
           )
@@ -41,7 +46,7 @@ const ScheduleTable = ({ timeSlot, tracks }) => {
                   "*"}
               </td>
               <td className="courses">
-                {courses.map(course => (
+                {sortBy(courses, "title").map(course => (
                   <div key={course.title} className="track-course">
                     <a
                       href={`/tracks#${encodeURIComponent(course.title)}`}
