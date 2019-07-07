@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useState } from "react"
+import * as Markdown from "react-markdown"
 
 const CourseInstructor = ({ name, affiliation, bio }) => {
   const [showBio, setShowBio] = useState(false)
@@ -15,8 +16,9 @@ const CourseInstructor = ({ name, affiliation, bio }) => {
       {affiliation && <span className="affiliation">{affiliation}</span>}
       {bio && showBio && (
         <>
-          {/* TODO: Markdownify */}
-          <div className="bio">{bio}</div>
+          <div className="bio">
+            <Markdown source={bio} />
+          </div>
         </>
       )}
     </div>
@@ -52,7 +54,9 @@ const CourseCard = ({ course }) => {
         )}
       </header>
       {course.description && (
-        <div className="description">{course.description}</div>
+        <div className="description">
+          <Markdown source={course.description} />
+        </div>
       )}
     </div>
   )
