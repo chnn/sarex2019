@@ -11,6 +11,14 @@ const RegistrationPage = () => {
     <Layout title="Register">
       <div className="page well registration">
         <h2>Register for SAREX 2019</h2>
+        <p>
+          Agencies that plan to pay for all their members and would prefer to
+          pay by check, please E-mail{" "}
+          <a href="sarex@marinsar.org">sarex@marinsar.org</a>. We will issue you
+          a special code to register all of your members and then invoice your
+          agency. This must be completed by the early registration deadline,
+          August 13th, 2019.
+        </p>
         {expoDiv}
         <h3>Disclaimer</h3>
         <p>
