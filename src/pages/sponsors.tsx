@@ -56,7 +56,7 @@ const SponsorsPage = () => {
             Additional information concerning sponsorship is available{" "}
             <a
               title="Additional sponsor information"
-              href="/assets/docs/SAREX 2019 Sponsorship Program.pdf"
+              href="/SAREX 2019 Sponsorship Program.pdf"
             >
               here
             </a>
