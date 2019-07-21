@@ -157,6 +157,16 @@ const IndexPage = () => {
               <Link to="/tracks" title="Schedule & Classes">
                 Schedule & Classes page
               </Link>
+              .{" "}
+            </p>
+            <p>
+              For an event overview, take a look at the{" "}
+              <a
+                href="/SAREX 2019 Master Schedule.pdf"
+                title="SAREX 2019 Master Schedule"
+              >
+                SAREX 2019 Master Schedule (pdf)
+              </a>
               .
             </p>
           </div>

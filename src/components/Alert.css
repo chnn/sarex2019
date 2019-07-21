@@ -1,0 +1,15 @@
+.alert {
+  background: var(--blue-2);
+  padding: 16px;
+  border-radius: var(--radius-b);
+  border: 1px solid var(--blue-4);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.alert__heading {
+  font-weight: bold;
+  color: var(--blue-9);
+  margin-right: 5px;
+  font-variant: all-small-caps;
+}
