@@ -1,12 +1,39 @@
 import * as React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/Layout"
+import LogoGrid from "../components/LogoGrid"
 
 const VendorsPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(
+        sort: { fields: name, order: DESC }
+        filter: { relativeDirectory: { eq: "vendors" } }
+      ) {
+        edges {
+          node {
+            id
+            name
+            childImageSharp {
+              fixed(height: 120) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Layout title="Vendors">
       <div className="vendors-page page well">
         <h2>Vendors</h2>
+        <p>Many thanks to this year's vendors!</p>
+        <LogoGrid data={data} />
+        <h3>Interested in being a vendor?</h3>
         <p>
           Thank you for your interest in being a vendor at this year’s
           California State Search and Rescue Exercise (SAREX) hosted by the

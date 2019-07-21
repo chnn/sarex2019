@@ -8,7 +8,7 @@ import "./sponsors.css"
 const SponsorsPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      jpmorgan: file(relativePath: { eq: "jpmc_logo.png" }) {
+      jpmorgan: file(relativePath: { eq: "sponsors/reczFTm1WzWibyrmV.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid

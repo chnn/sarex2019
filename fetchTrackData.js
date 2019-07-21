@@ -2,9 +2,9 @@ const axios = require("axios")
 
 const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY
 const BASE_URL = "https://api.airtable.com/v0/appFOosWCNWqmeJo1"
-const PEOPLE_ENDPOINT = "/People?view=Grid%20view"
-const COURSES_ENDPOINT = "/Courses?view=Grid%20view"
-const TRACKS_ENDPOINT = "/Tracks?view=Grid%20view"
+const PEOPLE_ENDPOINT = "/People"
+const COURSES_ENDPOINT = "/Courses"
+const TRACKS_ENDPOINT = "/Tracks"
 
 async function fetchTable(endpointURL) {
   const resp = await axios.get(`${BASE_URL}${endpointURL}`, {

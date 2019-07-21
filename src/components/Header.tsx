@@ -20,7 +20,7 @@ const LinkGroup = ({ title, links }) => {
       <div className="title">{title} ▾</div>
       <div className="links">
         {links.map(({ to, name }) => (
-          <Link to={to} activeClassName="active">
+          <Link key={name} to={to} activeClassName="active">
             {name}
           </Link>
         ))}
@@ -65,6 +65,7 @@ const Nav = ({}) => {
             { to: "/faq", name: "FAQ" },
             { to: "/sponsors", name: "Sponsors" },
             { to: "/vendors", name: "Vendors" },
+            { to: "/raffle", name: "Raffle" },
           ]}
         />
         <Link to="/register" className="button" activeClassName="active">

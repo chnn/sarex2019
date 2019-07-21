@@ -36,7 +36,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "fetch": "source .env && node fetchTrackData.js > src/data/tracks.json"
+    "fetchTracks": "source .env && node fetchTrackData.js > src/data/tracks.json",
+    "fetchSponsors": "source .env && node fetchSponsorData.js > src/data/imageLinks.json"
   },
   "repository": {
     "type": "git",

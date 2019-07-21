@@ -1,0 +1,13 @@
+.logo-grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-row-gap: var(--margin-e);
+  grid-column-gap: var(--margin-c);
+  margin: var(--margin-e) 0;
+}
+
+.logo-grid__image {
+  justify-self: center;
+  align-self: center;
+}
