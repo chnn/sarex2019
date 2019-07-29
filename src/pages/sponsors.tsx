@@ -3,15 +3,25 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/Layout"
+import LogoGrid from "../components/LogoGrid"
 import "./sponsors.css"
 
 const SponsorsPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      jpmorgan: file(relativePath: { eq: "sponsors/reczFTm1WzWibyrmV.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+      allFile(
+        sort: { fields: name, order: DESC }
+        filter: { relativeDirectory: { eq: "sponsors" } }
+      ) {
+        edges {
+          node {
+            id
+            name
+            childImageSharp {
+              fixed(height: 100) {
+                ...GatsbyImageSharpFixed
+              }
+            }
           }
         }
       }
@@ -29,11 +39,8 @@ const SponsorsPage = () => {
           and reduce event costs for search and rescue volunteers from across
           the state of California. Thank you Sponsors!
         </p>
-        <h3>Corporate Sponsor</h3>
-        <Img
-          fluid={data.jpmorgan.childImageSharp.fluid}
-          alt="JPMorgan Chase & Co."
-        />
+        <h3>Sponsors</h3>
+        <LogoGrid data={data} />
         <hr />
         <p>
           <em>

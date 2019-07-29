@@ -17,7 +17,7 @@ const RafflePage = () => {
             id
             name
             childImageSharp {
-              fixed(width: 400) {
+              fixed(height: 150) {
                 ...GatsbyImageSharpFixed
               }
             }

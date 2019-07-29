@@ -17,7 +17,7 @@ const VendorsPage = () => {
             id
             name
             childImageSharp {
-              fixed(height: 120) {
+              fixed(height: 150) {
                 ...GatsbyImageSharpFixed
               }
             }
