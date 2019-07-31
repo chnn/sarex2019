@@ -4,6 +4,14 @@
   "description": "California State SAREX 2019 Website",
   "version": "0.1.0",
   "author": "Christopher Henn <chrish@marinsar.org>",
+  "scripts": {
+    "build": "gatsby build",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "fetch-courses": "node fetchCourses.js > src/data/tracks.json",
+    "fetch-logos": "node fetchLogos.js > src/data/imageLinks.json"
+  },
   "dependencies": {
     "gatsby": "^2.10.4",
     "gatsby-image": "^2.2.3",
@@ -31,14 +39,6 @@
     "typescript": "^3.5.2"
   },
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "fetchTracks": "source .env && node fetchTrackData.js > src/data/tracks.json",
-    "fetchSponsors": "source .env && node fetchSponsorData.js > src/data/imageLinks.json"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/chnn/sarex2019"
