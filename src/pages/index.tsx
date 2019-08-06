@@ -74,6 +74,7 @@ const IndexPage = () => {
                   name="EMAIL"
                   className="required email"
                   id="mce-EMAIL"
+                  defaultValue=""
                 />
               </div>
               <div
@@ -84,7 +85,7 @@ const IndexPage = () => {
                   type="text"
                   name="b_50044d9940d4cc2b7e494e167_326cadd680"
                   tabIndex={-1}
-                  value=""
+                  defaultValue=""
                 />
               </div>
               <input
@@ -149,7 +150,7 @@ const IndexPage = () => {
             </p>
             <ul>
               {trackNames.map(name => (
-                <li>{name}</li>
+                <li key={name}>{name}</li>
               ))}
             </ul>
             <p>
