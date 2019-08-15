@@ -69,7 +69,7 @@ const Nav = ({}) => {
           ]}
         />
         <Link to="/register" className="button" activeClassName="active">
-          <button>Register</button>
+          Register
         </Link>
       </nav>
     </header>

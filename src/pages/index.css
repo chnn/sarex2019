@@ -36,8 +36,16 @@
   flex: 1 1 0;
 }
 
-.home-page .splash .blurb form input[type="submit"] {
-  width: 100%;
+.home-page .splash .blurb form .button {
+  flex: 1 1 50%;
+}
+
+.home-page .splash .blurb .form-buttons {
+  display: flex;
+}
+
+.home-page .splash .blurb .form-buttons .find-us-on-facebook {
+  margin-left: var(--margin-b);
 }
 
 .home-page .splash .blurb p:first-child {

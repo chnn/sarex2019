@@ -63,6 +63,14 @@
   --green-8: #137752;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: var(--font-body);
   font-size: var(--font-size-c);
@@ -147,11 +155,16 @@ h6 {
 }
 
 button,
+.button,
 input {
   border-radius: var(--radius-b);
   background: var(--blue-0);
   border: 2px solid var(--blue-9);
-  padding: 8px;
+  padding: var(--margin-a) var(--margin-c);
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 input[type="email"] {
@@ -159,6 +172,7 @@ input[type="email"] {
 }
 
 button,
+.button,
 input[type="submit"] {
   font-family: var(--font-display);
   font-weight: bold;
@@ -168,9 +182,11 @@ input[type="submit"] {
 }
 
 button:hover,
+.button:hover,
 input[type="submit"]:hover {
   transition: 0.15s;
   background: var(--green-6);
+  cursor: pointer;
 }
 
 a {
@@ -181,7 +197,7 @@ a {
   padding-bottom: 8px;
 }
 
-a:hover {
+a:hover:not(.button) {
   color: var(--green-6);
 }
 

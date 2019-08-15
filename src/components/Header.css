@@ -19,9 +19,8 @@
   margin-left: 25px;
 }
 
-.site-header nav > a {
-  display: block;
-  margin-top: 10px;
+.site-header nav > .page-link, .site-header nav .link-group {
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
@@ -59,7 +58,7 @@
   position: absolute;
   top: -5px;
   right: 0;
-  width: 175px;
+  width: 200px;
   padding: var(--margin-b) var(--margin-c);
   padding-top: calc(var(--margin-b) + 50px);
   background: var(--green-6);

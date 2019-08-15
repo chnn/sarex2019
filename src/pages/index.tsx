@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 
 import Layout from "../components/Layout"
 import Slideshow from "../components/Slideshow"
+import FacebookButton from "../components/FacebookButton"
 import "./index.css"
 
 const IndexPage = () => {
@@ -56,7 +57,7 @@ const IndexPage = () => {
             </p>
             <div className="break"></div>
             <p>
-              <b>Stay in the loop with email updates.</b>
+              <b>Stay in the loop with SAREX updates.</b>
             </p>
             <form
               action="https://marinsar.us20.list-manage.com/subscribe/post?u=50044d9940d4cc2b7e494e167&amp;id=326cadd680"
@@ -88,13 +89,16 @@ const IndexPage = () => {
                   defaultValue=""
                 />
               </div>
-              <input
-                type="submit"
-                value="Subscribe to updates"
-                name="subscribe"
-                id="mc-embedded-subscribe"
-                className="button"
-              />
+              <div className="form-buttons">
+                <input
+                  type="submit"
+                  value="Subscribe to email updates"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  className="button"
+                />
+                <FacebookButton />
+              </div>
             </form>
           </div>
         </section>
