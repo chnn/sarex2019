@@ -2,20 +2,24 @@ import * as React from "react"
 import { useEffect } from "react"
 
 import Layout from "../components/Layout"
+import useExpoScript from "../utils/useExpoScript"
 
 const RegistrationPage = () => {
+  const expoDiv = useExpoScript("9jQ7bXl")
+
   return (
     <Layout title="Register">
       <div className="page well registration">
         <h2>Register for SAREX 2019</h2>
         <p>
-          We have reached capcity for SAREX 2019 and registration is now closed.
-          If you would like to make the case to attend, please email{" "}
-          <a href="mailto:sarex@marinsar.org" title="SAREX 2019 email">
-            sarex@marinsar.org
-          </a>
-          .
+          Agencies that plan to pay for all their members and would prefer to
+          pay by check, please E-mail{" "}
+          <a href="sarex@marinsar.org">sarex@marinsar.org</a>. We will issue you
+          a special code to register all of your members and then invoice your
+          agency. This must be completed by the early registration deadline,
+          August 13th, 2019.
         </p>
+        {expoDiv}
         <h3>Disclaimer</h3>
         <p>
           In the event that a Major Incident forces the cancellation of SAREX
