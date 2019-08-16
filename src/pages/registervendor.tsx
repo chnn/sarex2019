@@ -2,20 +2,16 @@ import * as React from "react"
 import { useEffect } from "react"
 
 import Layout from "../components/Layout"
+import useExpoScript from "../utils/useExpoScript"
 
 const VendorRegistrationPage = () => {
+  const expoDiv = useExpoScript("bjElEeZ")
+
   return (
     <Layout title="Vendor Registration">
       <div className="page well registration">
         <h2>SAREX 2019 Vendor Registration</h2>
-        <p>
-          We have reached capcity for SAREX 2019 and registration is now closed.
-          If you would like to make the case to attend, please email{" "}
-          <a href="mailto:sarex@marinsar.org" title="SAREX 2019 email">
-            sarex@marinsar.org
-          </a>
-          .
-        </p>
+        {expoDiv}
         <h3>Disclaimer</h3>
         <p>
           In the event that a Major Incident forces the cancellation of SAREX
