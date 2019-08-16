@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/Layout"
 import Slideshow from "../components/Slideshow"
 import FacebookButton from "../components/FacebookButton"
+import Alert from "../components/Alert"
 import "./index.css"
 
 const IndexPage = () => {
@@ -41,6 +42,12 @@ const IndexPage = () => {
   return (
     <Layout title="Home">
       <div className="home-page">
+        <Alert heading="Update">
+          We are closing SAREX 2019 registration early due to the outstanding
+          response. We are currently at capacity for the facility at 375
+          participants. If you have any questions, please email us at{" "}
+          <a href="mailto:sarex@marinsar.org">sarex@marinsar.org</a>.
+        </Alert>
         <section className="splash">
           <Slideshow />
           <div className="blurb">

@@ -68,9 +68,6 @@ const Nav = ({}) => {
             { to: "/raffle", name: "Raffle" },
           ]}
         />
-        <Link to="/register" className="button" activeClassName="active">
-          Register
-        </Link>
       </nav>
     </header>
   )
