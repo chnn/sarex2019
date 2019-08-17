@@ -18,8 +18,8 @@ const SponsorsPage = () => {
             id
             name
             childImageSharp {
-              fixed(height: 100) {
-                ...GatsbyImageSharpFixed
+              fluid(maxHeight: 200) {
+                ...GatsbyImageSharpFluid
               }
             }
           }

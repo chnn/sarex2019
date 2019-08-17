@@ -17,8 +17,8 @@ const VendorsPage = () => {
             id
             name
             childImageSharp {
-              fixed(height: 150) {
-                ...GatsbyImageSharpFixed
+              fluid(maxHeight: 200) {
+                ...GatsbyImageSharpFluid
               }
             }
           }

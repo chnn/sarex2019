@@ -30,7 +30,10 @@ const LogoGrid = ({ data }) => {
           href={imageLinks.find(d => d.id === node.name).url}
           title=""
         >
-          <Img fixed={node.childImageSharp.fixed} />
+          <Img
+            style={{ objectFit: "contain", width: "100%", height: "100%" }}
+            fluid={node.childImageSharp.fluid}
+          />
         </a>
       ))}
     </div>

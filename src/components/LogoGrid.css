@@ -1,11 +1,16 @@
 .logo-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - var(--margin-f) / 2));
+  grid-row-gap: var(--margin-g);
+  grid-column-gap: var(--margin-f);
   margin: var(--margin-e) 0;
-  align-items: center;
-  justify-content: center;
 }
 
 .logo-grid__image {
-  margin: var(--margin-e);
+  display: block;
+  height: 200px;
+}
+
+.logo-grid__image img {
+  object-fit: contain !important;
 }
