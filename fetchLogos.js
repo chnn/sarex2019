@@ -34,15 +34,17 @@ async function downloadImage(url, imagePath) {
 async function downloadImages(endpoint, folderPath, registry) {
   const records = await fetchTable(endpoint)
 
-  records.forEach(({ id, fields: { Name, Link, Logo } }) => {
-    const { url, filename } = Logo[0]
-    const fileParts = filename.split(".")
-    const fileExtension = fileParts[fileParts.length - 1]
+  records
+    .filter(r => r.fields.Logo)
+    .forEach(({ id, fields: { Name, Link, Logo } }) => {
+      const { url, filename } = Logo[0]
+      const fileParts = filename.split(".")
+      const fileExtension = fileParts[fileParts.length - 1]
 
-    registry.push({ id, name: Name, url: Link })
+      registry.push({ id, name: Name, url: Link })
 
-    downloadImage(url, `${folderPath}/${id}.${fileExtension}`)
-  })
+      downloadImage(url, `${folderPath}/${id}.${fileExtension}`)
+    })
 }
 
 async function main() {
